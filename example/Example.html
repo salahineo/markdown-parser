@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="one-dark">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8"/>
+  <meta name="author" content="Mohamed Salah"/>
+  <meta name="keywords" content="markdown parser, parser, markdown, md parser, salahineo"/>
+  <meta name="description" content="Parse Markdown into HTML page with a lot of functionalities"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Title -->
+  <title>Example</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/favicon.ico"/>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/fontawesome.min.css"/>
+  <link rel="stylesheet" href="../assets/css/style.min.css"/>
+  
+  <!-- Check Local Storage Color Mode -->
+  <script>
+    // Get Local Storage ITem
+    let localstorageMode = localStorage.getItem("MarkdownParserColorMode");
+    // Check If Exist Or Not, Then Switch Colors
+    null === localstorageMode
+      ? document.documentElement.setAttribute("data-theme", "one-dark")
+      : document.documentElement.setAttribute("data-theme", localstorageMode);
+  </script>
+</head>
+<body class="_toc-left">
+ <!-- Start No Js Enabled Warning -->
+  <noscript>
+    <div class="noJS">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span>Please Enable JavaScript In Your Browser To Render Page Correctly</span>
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+  </noscript>
+  <!-- End No Js Enabled Warning -->
+
+  <!-- Start Table Of Content -->
+  <div id="_toc">
+    <form>
+        <span id="_searchIco">
+          <a href="../index.php"><i class="fas fa-home"></i></a>
+        </span>
+      <input type="text" id="_filter" placeholder="Find Something" autofocus/>
+      <span id="_mode"><i class="fas fa-adjust"></i></span>
+    </form>
+    <div class="toc_color_modes">
+     <span id="theme_light" title="Light Theme"></span>
+      <span id="theme_semi-light" title="Semi-Light Theme"></span>
+      <span id="theme_one-dark" title="One-Dark Theme"></span>
+      <span id="theme_dark-ocean" title="Dark-Ocean Theme"></span>
+      <span id="theme_dark" title="Dark Theme"></span>
+    </div>
+    <h1></h1>
+    <!-- TOC Content -->
+    <div id="_myUL"></div>
+    <h1></h1>
+  </div>
+  <!-- End Table Of Content -->
+
+  <!-- Start Main Content -->
+  <div id="_html" class="markdown-body">
+    <div id="_collapse"></div>
+    <div id="_side"><i class="fas fa-chevron-circle-right"></i></div>
+    <!-- Start Content -->
+    <div id="_html_content">
+    <h1 id="example">Example</h1>
+<h2 id="basic-elements">Basic Elements</h2>
+<h3 id="list">List</h3>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<h3 id="code">Code</h3>
+<p><code>This is a single line of code</code></p>
+<h3 id="blockquote">Blockquote</h3>
+<blockquote>
+<p>This is a blockquote, and this is a <code>code</code> inside blockquote</p>
+</blockquote>
+<h3 id="image">Image</h3>
+<p><img src="../assets/images/cheatsheets/example.png" alt="Example Image"></p>
+<h3 id="table">Table</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text</td>
+<td>This is a text inside table cell</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>This is a <code>code</code> inside table cell</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>This is a <code>code</code> inside table cell</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>This is a text inside table cell</td>
+</tr>
+</tbody></table>
+<h6 id="separator-h6-element">Separator (H6 Element)</h6>
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<h3 id="html">HTML</h3>
+<p><code>HTML syntax highlighting</code></p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Title Of web page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content Of web page --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<blockquote>
+<p>If you hover on previous block of code, copy icon will appear, just click on it to copy the block of code content</p>
+</blockquote>
+<h3 id="javascript">JavaScript</h3>
+<p><code>JavaScript syntax highlighting</code></p>
+<pre><code class="language-js">function functionName() {
+  console.log(&#39;Hello from function&#39;);
+}
+</code></pre>
+<h3 id="php">PHP</h3>
+<p><code>PHP syntax highlighting</code></p>
+<pre><code class="language-php">&lt;?php
+  // PHP Code
+  $user = &#39;Mohamed&#39;;
+  echo $user;
+?&gt;
+</code></pre>
+<blockquote>
+<p>There are syntax highlighting for most known languages, this just an example</p>
+</blockquote>
+<blockquote>
+<p>This file generated from <a href="Example.md">Example.md</a>, please check out its syntax</p>
+</blockquote>
+
+    </div> 
+    <!-- End Content -->
+    <hr>
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="credits">
+            <span class="copyright">
+              &copy; <span id="footer-copyright-year"></span>
+              | <strong>Mohamed Salah</strong>
+            </span>
+      </div>
+      <div class="links">
+        <a href="https://www.github.com/salahineo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/salahineo/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.twitter.com/salahineo" target="_blank">
+          <i class="fab fa-twitter"> </i>
+        </a>
+        <a href="https://www.facebook.com/salahineo/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://salahineo.github.io/salahineo/" target="_blank">
+          <i class="fas fa-globe-africa"></i>
+        </a>
+        <a href="mailto:salahineo.work@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Main Content -->
+  
+  <!-- Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/prism.min.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

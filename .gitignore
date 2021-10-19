@@ -1,0 +1,5 @@
+.idea
+markdown/*
+
+!markdown/Sample.md
+!markdown/index.md
