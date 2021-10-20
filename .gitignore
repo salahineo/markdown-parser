@@ -1,6 +1,5 @@
 .idea
-markdown/*
+markdown
+generated
 
-!markdown/Directory
-!markdown/Example.md
 !markdown/index.md
