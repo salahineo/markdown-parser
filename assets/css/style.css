@@ -1303,6 +1303,10 @@ h6 {
   display: none;
 }
 
+#_myUL > div._ul:first-of-type > div > div > div > div > div > a[href="#separator"] {
+  top: 40px !important;
+}
+
 a[href="#separator"] {
   position: absolute;
   width: 100%;

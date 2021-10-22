@@ -52,7 +52,7 @@ $(function () {
       sidebarArrowIcon.css("transform", "rotate(0)");
     }
   }),
-    content.on("click", function (e) {
+    content.on("click", function () {
       "250px" === sidebar.css("width") &&
       $(window).outerWidth() < 1200 &&
       (sidebar.css("width", "0"),
@@ -66,7 +66,8 @@ $(function () {
       $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top}, 800);
     });
   // Filter TOC Input
-  $("#_filter").on("keyup", function () {
+  $("#_filter").on("keyup", function (e) {
+    // Loop Through TOC Links
     for (
       let filterValue = document.getElementById("_filter").value.toUpperCase(),
         links = document.getElementById("_myUL").getElementsByTagName("a"),
@@ -79,11 +80,18 @@ $(function () {
         ? link.setAttribute("style", "display:block!important")
         : link.setAttribute("style", "display:none!important");
     }
+    // Check Input Value
+    if (e.target.value !== "") {
+      // Hide Separators
+      $("[href='#separator']").attr("style", "display:none!important").parent().parent().parent().parent().parent().parent().next().removeClass("after-separator");
+    } else {
+      // Show Separators
+      $("[href='#separator']").attr("style", "display:block!important").parent().parent().parent().parent().parent().parent().next().addClass("after-separator");
+    }
   });
 
   // Copy Icon Append & Wrapper To Every Pre Code
-  $(".markdown-body pre").append(`<i class="far fa-clone fa-rotate-180"></i><span class='copied'>copied!</span><span class='copied-arrow'></span>`);
-  $(".markdown-body pre").wrap("<div style=\"position: relative\"></div>");
+  $(".markdown-body pre").append(`<i class="far fa-clone fa-rotate-180"></i><span class='copied'>copied!</span><span class='copied-arrow'></span>`).wrap("<div style=\"position: relative\"></div>");
   // On Click
   $(".markdown-body pre i").on("click", function () {
     // Make Temp Textarea

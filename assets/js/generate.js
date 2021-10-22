@@ -64,7 +64,7 @@ $(function () {
       };
       // Send Data In Background
       await $.ajax({
-        url: "../../generate-script.php",
+        url: "/generate-script.php",
         method: "POST",
         data: data,
         success: async function (data) {
@@ -73,7 +73,7 @@ $(function () {
           // Trigger Error Alert
           setAlert("success", "Success", "File created in: <br>" + "<small>" + data.split("/\\")[1] + "</small>");
           // Check Open In New Tab
-          submitForm.auto_open.checked ? window.open("../../generated/" + data.split("/\\")[0] + ".html") : "";
+          submitForm.auto_open.checked ? window.open("/generated/" + data.split("/\\")[0] + ".html") : "";
         },
         error: function (err) {
           // Change Loading State

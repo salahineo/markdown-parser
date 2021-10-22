@@ -22,7 +22,7 @@ of functionalities, and you can generate an HTML file from custom Markdown synta
 - Syntax highlighting for most known languages
 - Convert `H6` element to table of content separator
 
-> You can see the [Example.html](../example/Example.html) file, that has been generated from [Example.md](../example/Example.md) file
+> You can see the [Example.html](/example/Example.html) file, that has been generated from [Example.md](/example/Example.md) file
 
 ## Structure
 
@@ -41,9 +41,9 @@ of functionalities, and you can generate an HTML file from custom Markdown synta
 
 |Page|Description|
 |---|---|
-|[Home](../index.php)|It is the current page which contain project instructions and list of markdown files in markdown directory|
-|[Generate](../generate.php)|Generate HTML from Markdown syntax page (generated pages will be in the generated directory)|
-|[Example](../example/Example.html)|Contain samples of Markdown syntax exported to HTML|
+|[Home](/index.php)|It is the current page which contain project instructions and list of markdown files in markdown directory|
+|[Generate](/generate.php)|Generate HTML from Markdown syntax page (generated pages will be in the generated directory)|
+|[Example](/example/Example.html)|Contain samples of Markdown syntax exported to HTML|
 
 ## Workflow
 
@@ -52,7 +52,7 @@ of functionalities, and you can generate an HTML file from custom Markdown synta
 - Create a Markdown file with any name, like `Sample File.md`
 - Copy this Markdown file to `markdown` directory in this project (You can put it inside a directory as category for
   multiple markdown files)
-- Open the [home page](../index.php), and you will found this file in the left table of content (search with file name)
+- Open the [home page](/index.php), and you will found this file in the left table of content (search with file name)
 - Click on it, and it will be parsed and opened on another browser tab
 
 > This application supports only 2 levels or fewer in the `markdown` directory. So you can create a Markdown file and put it inside the `markdown` directory,
@@ -64,7 +64,7 @@ of functionalities, and you can generate an HTML file from custom Markdown synta
 ### Generate
 
 - Write your Markdown syntax
-- Go to [Generate Page](../generate.php)
+- Go to [Generate Page](/generate.php)
 - Type a name for your generated HTML file
 - Copy and paste your Markdown syntax in the textarea
 - Generate the HTML file
@@ -73,12 +73,12 @@ of functionalities, and you can generate an HTML file from custom Markdown synta
 
 ## Instructions
 
-- If there is an image, you need to put it in the `assets/images/cheatsheets`, and make sure that, the markdown file
+- If there is an image, you need to put it in the `/assets/images/cheatsheets`, and make sure that, the markdown file
   have the same path for the image src
 - If you copy any file from `generated` directory and paste it to another location it will not work, because the missing
   of required styles and scripts. You can copy he `generated` and `assets` directories together to any location, and all
   generated HTML files will work perfectly
-- Don't try to crack this application by inject malicious code in the [Generate Page](../generate.php), and remember it
+- Don't try to crack this application by inject malicious code in the [Generate Page](/generate.php), and remember it
   runs on your local-server
 
 > Any content will be on your local-server, no data, or images will be published remotely
