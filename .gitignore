@@ -1,5 +1,7 @@
 .idea
 markdown
 generated
+assets/images/cheatsheets
 
 !markdown/index.md
+!assets/images/cheatsheets/example.png
