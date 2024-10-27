@@ -72,24 +72,7 @@ cd repo-name
     - On Windows, open `C:\Windows\System32\drivers\etc\hosts` in a text editor with administrator privileges.
     - On Linux, edit `/etc/hosts` with root privileges.
 - Add the following line, `127.0.0.1 repo-name.local`
-
 - Restart Apache: After saving these changes, go back to the XAMPP control panel and restart Apache to apply the new virtual host configuration.
-
-#### Step 6: Import Database Using phpMyAdmin
-
-- Start MySQL Server: In the XAMPP control panel, click "Start" next to MySQL to start the MySQL database server.
-- Open phpMyAdmin: In your browser, go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
-- Click on the Databases tab at the top.
-- Enter a name for the database (e.g., `repo-name`) and select `utf8_general_ci` as the collation. Click Create.
-- Select the newly created database from the left sidebar.
-- Click on the Import tab at the top.
-- Under File to Import, click Choose File and select the SQL file provided with the project.
-- Ensure the format is set to SQL, then click Go to start the import.
-- Once the import completes, you should see a success message. Verify that the tables have been created by browsing the database.
-
-> You can find the SQL file in the `database` directory of the project.
-
-> Change the DB name and credentials in the `database.php` file.
 
 #### Step 5: Access the Application
 
