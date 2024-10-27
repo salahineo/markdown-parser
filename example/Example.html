@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="one-dark">
+<html data-theme="one-dark" lang="en">
 <head>
   <!-- Meta -->
   <meta charset="UTF-8"/>
-  <meta name="author" content="Mohamed Salah"/>
-  <meta name="keywords" content="markdown parser, parser, markdown, md parser, salahineo"/>
-  <meta name="description" content="Parse Markdown into HTML page with a lot of functionalities"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta content="Mohamed Salah" name="author"/>
+  <meta content="markdown parser, parser, markdown, md parser, salahineo" name="keywords"/>
+  <meta content="Parse Markdown into HTML page with a lot of functionalities" name="description"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   
   <!-- Title -->
   <title>Example</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="../assets/images/favicon.ico"/>
+  <link href="../assets/images/favicon.ico" rel="icon"/>
   
   <!-- CSS -->
-  <link rel="stylesheet" href="../assets/css/fontawesome.min.css"/>
-  <link rel="stylesheet" href="../assets/css/style.min.css"/>
+  <link href="../assets/css/fontawesome.min.css" rel="stylesheet"/>
+  <link href="../assets/css/style.min.css" rel="stylesheet"/>
   
   <!-- Check Local Storage Color Mode -->
   <script>
@@ -45,7 +45,7 @@
         <span id="_searchIco">
           <a href="../index.php"><i class="fas fa-home"></i></a>
         </span>
-      <input type="text" id="_filter" placeholder="Find Something" autofocus/>
+      <input autofocus id="_filter" placeholder="Find Something" type="text"/>
       <span id="_mode"><i class="fas fa-adjust"></i></span>
     </form>
     <div class="toc_color_modes">
@@ -63,7 +63,7 @@
   <!-- End Table Of Content -->
 
   <!-- Start Main Content -->
-  <div id="_html" class="markdown-body">
+  <div class="markdown-body" id="_html">
     <div id="_collapse"></div>
     <div id="_side"><i class="fas fa-chevron-circle-right"></i></div>
     <!-- Start Content -->
@@ -83,7 +83,7 @@
 <p>This is a blockquote, and this is a <code>code</code> inside blockquote</p>
 </blockquote>
 <h3 id="image">Image</h3>
-<p><img src="../assets/images/cheatsheets/example.png" alt="Example Image"></p>
+<p><img alt="Example Image" src="../assets/images/cheatsheets/example.png"></p>
 <h3 id="table">Table</h3>
 <table>
 <thead>
@@ -154,30 +154,10 @@
     <!-- Start Footer -->
     <div class="footer">
       <div class="credits">
-            <span class="copyright">
-              &copy; <span id="footer-copyright-year"></span>
-              | <strong>Mohamed Salah</strong>
-            </span>
-      </div>
-      <div class="links">
-        <a href="https://www.github.com/salahineo" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/salahineo/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.twitter.com/salahineo" target="_blank">
-          <i class="fab fa-twitter"> </i>
-        </a>
-        <a href="https://www.facebook.com/salahineo/" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://salahineo.github.io/salahineo/" target="_blank">
-          <i class="fas fa-globe-africa"></i>
-        </a>
-        <a href="mailto:salahineo.work@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i>
-        </a>
+           <span class="copyright">
+             &copy; <span id="footer-copyright-year"></span>
+             | <a href="https://salahineo.com" rel="noopener" target="_blank">Mohamed Salah</a>
+           </span>
       </div>
     </div>
     <!-- End Footer -->

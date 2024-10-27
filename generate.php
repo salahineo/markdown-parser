@@ -72,30 +72,10 @@
     <!-- Start Footer -->
     <div class="footer">
       <div class="credits">
-        <span class="copyright">
-          &copy; <span id="footer-copyright-year"></span>
-          | <strong>Mohamed Salah</strong>
-        </span>
-      </div>
-      <div class="links">
-        <a href="https://www.github.com/salahineo" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/salahineo/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.twitter.com/salahineo" target="_blank">
-          <i class="fab fa-twitter"> </i>
-        </a>
-        <a href="https://www.facebook.com/salahineo/" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://salahineo.github.io/salahineo/" target="_blank">
-          <i class="fas fa-globe-africa"></i>
-        </a>
-        <a href="mailto:salahineo.work@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i>
-        </a>
+           <span class="copyright">
+             &copy; <span id="footer-copyright-year"></span>
+             | <a href="https://salahineo.com" target="_blank" rel="noopener">Mohamed Salah</a>
+           </span>
       </div>
     </div>
     <!-- End Footer -->

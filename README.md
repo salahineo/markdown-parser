@@ -55,16 +55,19 @@ cd repo-name
 
 - Edit the vhosts file `C:\xampp\apache\conf\extra\httpd-vhosts.conf` (Windows) or `/opt/lampp/etc/extra/httpd-vhosts.conf` (Linux).
 - Add the following lines at the bottom of the file:
-  ```apache
-  <VirtualHost *:80>
-      DocumentRoot "C:/xampp/htdocs/repo-name"
-      ServerName repo-name.local
-      <Directory "C:/xampp/htdocs/repo-name">
-          AllowOverride All
-          Require all granted
-      </Directory>
-  </VirtualHost>
-  ```
+
+```apache
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/repo-name"
+    ServerName repo-name.local
+    DirectoryIndex index.html index.php
+
+    <Directory "C:/xampp/htdocs/repo-name">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
 
 > Adjust the file paths if your XAMPP is installed in a different directory.
 
